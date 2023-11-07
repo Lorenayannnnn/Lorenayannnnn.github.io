@@ -1,0 +1,904 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.91.2" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://tianyi-lorena-yan-me.web.app/css/main.css"/>
+
+<link rel="stylesheet" href="https://tianyi-lorena-yan-me.web.app/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://tianyi-lorena-yan-me.web.app/css/custom.css"/>
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://tianyi-lorena-yan-me.web.app/">
+        <span>Tianyi</span>
+        <span>Yan</span>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://tianyi-lorena-yan-me.web.app/">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#research"
+              >RESEARCH</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#work_experience"
+              >WORK EXPERIENCE</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#projects"
+              >PROJECTS</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#teaching_volunteer"
+              >TEACHING &amp; VOLUNTEER</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#education"
+              >EDUCATION</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >CONTACT</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://tianyi-lorena-yan-me.web.app/img/who-am-i/Lorena.jpeg"
+      data-srcset="https://tianyi-lorena-yan-me.web.app/img/who-am-i/Lorena.jpeg 1x, https://tianyi-lorena-yan-me.web.app/img/who-am-i/Lorena.jpeg 2x"
+      alt=""
+      style="border-radius: 1rem;
+              height: 40%;
+              margin-top: 0;
+              margin-left: 7.5rem;"
+    />
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile"
+    style="width: 40%;
+    margin-top: -4rem;
+    margin-bottom: -8rem;">
+    <img
+            class="lozad img-responsive"
+            src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+            data-src="https://tianyi-lorena-yan-me.web.app/img/who-am-i/Lorena.jpeg"
+            alt=""
+            style="border-radius: 50%;"
+    />
+  </div>
+  <div class="container" style="margin-top: 10rem; margin-bottom: 4rem;">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1" style="font-size: 45px;">
+          Hello there!
+          <br />
+          I&#39;m Tianyi(Lorena) Yan
+          <span style="font-size: 15px;font-style: italic;"
+            >Contact: tianyiy `at` usc `dot` edu</span
+          >
+        </h1>
+        <p class="lead" style="font-size: 15px;">
+          I’m currently a fourth-year undergraduate student (Computer Science B.S.) at <a href='https://www.cs.usc.edu/' target='_blank'>USC Viterbi</a>. <br/><br/> My broad research interests lie in natural language processing. I am motivated to develop more <span style='font-weight: bold;'>robust</span>, <span style='font-weight: bold;'>generalizable</span>, and <span style='font-weight: bold;'>controllable</span>  large language models. I am grateful to be advised by Professor <a href='https://muhaochen.github.io/' target='_blank'>Muhao Chen</a> at <a href='https://luka-group.github.io/' target='_blank'>LUKA Lab</a>. I have also had the pleasure to work with Professor <a href='https://zhouh.github.io/' target='_blank'>Hao Zhou</a> at <a href='https://air.tsinghua.edu.cn/' target='_blank'>Insititute for AI Industry Research (AIR), Tsinghua University</a> on target-aware molecule generation. <br/><br/> With persistence and self-motivation, I am eager to enhance the reliability and efficiency of human-machine interaction and bring vision to reality. <br/><br/> I am also interested in music (have played the flute for 8 years), and cooking. Checkout my food journal on <a href='https://www.instagram.com/lorenayannnnn_foodie_mix/' target='_blank'>ins</a>! 😃
+        </p>
+        <a
+          href="https://tianyi-lorena-yan-me.web.app/tianyiy_yan_cv.pdf"
+          class="btn btn-primary"
+        >
+          <i class="icon-profile-fill"></i>
+          CV
+        </a>
+        <a href="mailto:tianyiy@usc.edu" class="btn btn-frameless"
+           target="_blank">
+          <i class="icon-mail-fill"></i>
+          Contact
+        </a>
+      </div>
+    </div>
+    <div class="row platform-links" style="margin: 2rem -22px 4rem;">
+      <div class="col-12">
+        
+        <a href="https://www.linkedin.com/in/tianyi-yan-lorena/" target="_blank"
+          ><i class="icon-linkedin-line"></i
+        ></a>
+        
+        <a href="https://github.com/Lorenayannnnn" target="_blank"
+          ><i class="icon-github-line"></i
+        ></a>
+        
+        <a href="https://www.instagram.com/lorenayannnnn/" target="_blank"
+          ><i class="icon-instagram-line"></i
+        ></a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section id="research" class="section section--border-bottom" style="padding-top: 7rem;">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      🗃 Research
+    </h2>
+
+
+
+
+
+
+
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+      style="margin-top: 1rem;"
+    >
+      
+      <div class="col-12  mt-4 mt-md-0 my-md-auto">
+        <div class="experience__date"></div>
+        <h3>Enhancing Robustness to Instruction Perturbation with Contrastive Learning (Paper under submission)</h3>
+        <p class="lead" style="line-height: 25px;font-size: 15px;margin: -8px 0 8px;">
+          Research Assistant @ <a href='https://luka-group.github.io/' target='_blank'>LUKA</a> lab, Supervisor: Prof. <a href='https://muhaochen.github.io/' target='_blank'>Muhao Chen</a>
+        </p>
+        <ul style="padding-left: 0;">
+          
+          <li><span style='font-weight: bold'>Tianyi Yan</span>, Fei Wang, James Y. Huang, Wenxuan Zhou, Muhao Chen</li>
+          
+          <li>Utilized contrastive learning to enhance model robustness to perturbed and generalization on unseen instructions</li>
+          
+        </ul>
+        <p class="lead">
+          
+        </p>
+        
+      </div>
+      
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+      style="margin-top: 1rem;"
+    >
+      
+      <div class="col-12  mt-4 mt-md-0 my-md-auto">
+        <div class="experience__date"></div>
+        <h3>Robust Natural Language Understanding with Residual Attention Debiasing</h3>
+        <p class="lead" style="line-height: 25px;font-size: 15px;margin: -8px 0 8px;">
+          Research Assistant @ <a href='https://luka-group.github.io/' target='_blank'>LUKA</a> lab, Supervisor: Prof. <a href='https://muhaochen.github.io/' target='_blank'>Muhao Chen</a>
+        </p>
+        <ul style="padding-left: 0;">
+          
+          <li>Fei Wang*, James Y. Huang*, <span style='font-weight: bold'>Tianyi Yan</span>, Wenxuan Zhou, Muhao Chen</li>
+          
+          <li>Developed one-stage product-of-experts and residual attention learning techniques to mitigate biases in NLU models by assembling predictions and low-level attention scores</li>
+          
+          <li>Accepted at ACL 2023 [<a href='https://arxiv.org/abs/2305.17627' target='_blank'>Paper</a>] [<a href='https://github.com/luka-group/READ' target='_blank'>Code</a>]</li>
+          
+        </ul>
+        <p class="lead">
+          
+        </p>
+        
+      </div>
+      
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+      style="margin-top: 1rem;"
+    >
+      
+      <div class="col-12  mt-4 mt-md-0 my-md-auto">
+        <div class="experience__date"></div>
+        <h3>Latent Diffusion for Target-Specific Molecule Generation</h3>
+        <p class="lead" style="line-height: 25px;font-size: 15px;margin: -8px 0 8px;">
+          Research Assistant @ <a href='https://air.tsinghua.edu.cn/' target='_blank'>AIR, Tsinghua University</a>, Supervisor: Prof. <a href='https://zhouh.github.io/' target='_blank'>Hao Zhou</a>
+        </p>
+        <ul style="padding-left: 0;">
+          
+          <li>Developed Variational Autoencoder (VAE) and diffusion model to enhance the affinity of generated ligands given protein pockets</li>
+          
+        </ul>
+        <p class="lead">
+          
+        </p>
+        
+      </div>
+      
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+      style="margin-top: 1rem;"
+    >
+      
+      <div class="col-12  mt-4 mt-md-0 my-md-auto">
+        <div class="experience__date"></div>
+        <h3>Target-specific Molecule Generation and Docking</h3>
+        <p class="lead" style="line-height: 25px;font-size: 15px;margin: -8px 0 8px;">
+          Research Assistant @ <a href='https://air.tsinghua.edu.cn/' target='_blank'>AIR, Tsinghua University</a>, Supervisor: Prof. <a href='https://zhouh.github.io/' target='_blank'>Hao Zhou</a>
+        </p>
+        <ul style="padding-left: 0;">
+          
+          <li>Implemented a diffusion-based model that iteratively generated ligands and identified optimal docking positions</li>
+          
+        </ul>
+        <p class="lead">
+          
+        </p>
+        
+      </div>
+      
+      
+    </div>
+    
+  </div>
+</section>
+
+
+	
+	
+<section id="work_experience" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12" style="max-width: 100%;margin-bottom: 3rem;">
+                <h2>💻 Work Experience</h2>
+                <p class="lead">
+                    
+                </p>
+                <a href="https://www.linkedin.com/in/tianyi-yan-lorena/" class="btn btn-primary"
+                   target="_blank">
+                    <i class="icon-linkedin-fill"></i>
+                    Linkedin
+                    <i class="icon-arrow-right"></i></a>
+                <a href="https://tianyi-lorena-yan-me.web.app/tianyiy_yan_cv.pdf" class="btn btn-frameless"
+                   target="_blank">
+                    <i class="icon-profile-fill"></i>
+                    Download My CV
+                </a>
+            </div>
+            <div class="col-12 mt-5 mt-sm-0">
+                
+                <div class="experience">
+                    <div class="experience__date">June 2022 – August 2022</div>
+                    <div class="experience__title">SWE Student Explore Internship</div>
+                    <div class="experience__company" style="line-height: 25px;">Microsoft M365 Deployment</div>
+                    <div class="experience__company">
+                        <ul style="padding-left: 0;">
+                            
+                                <li>Applied React to add a dashboard page for centralizing all global deployment issues from scattered alert emails and visualizing them in multiple dimensions</li>
+                            
+                                <li>Monitored and collected real-time issue data from deployment workflow to Cosmos NoSQL database</li>
+                            
+                                <li>Utilized C# and ASP.NET to create endpoint to filter issues based on threshold values at runtime and forwarded data to frontend</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience">
+                    <div class="experience__date">May 2021 – January 2022</div>
+                    <div class="experience__title">Full Stack Software Engineering Intern</div>
+                    <div class="experience__company" style="line-height: 25px;">Talkilla Education</div>
+                    <div class="experience__company">
+                        <ul style="padding-left: 0;">
+                            
+                                <li>Used Vue.js and JSP to add a frontend module for employed teachers to create student reports</li>
+                            
+                                <li>Added automatic email notifications and English-to-Chinese translation for sending and editing reports</li>
+                            
+                                <li>Added a module for sending automatic notifications via WeChat Service Account when student reports are available</li>
+                            
+                                <li>Applied Java Spring Framework, Maven, MySQL, and MyBatis to develop backend</li>
+                            
+                                <li>Used Jenkins and Gitlab for deployment</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="projects" class="section section--border-bottom">
+    <div class="container">
+        <h2 class=" rad-animation-group rad-fade-down">
+            🗃 Projects
+        </h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        <div
+                class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+        >
+            
+            <div class="col-12  mt-4 mt-md-0 my-md-auto">
+                <div class="experience__date">April 2023</div>
+                <h3>Textual Dialog-Based Meme Recommendation</h3>
+                <p class="lead" style="line-height: 25px;font-size: 15px;margin: -8px 0 8px;">
+                    2022-2023 Google Research ExploreCSR
+                </p>
+                <ul style="padding-left: 0;">
+                    
+                    <li>Implemented contrastive learning using PyTorch and HuggingFace to align hidden representations of text and image inputs from fine-tuned ViLT and EmoRoBERTa models based on emotion</li>
+                    
+                    <li>Jointly trained models with cross-entropy loss for sentiment classification and contrastive loss</li>
+                    
+                    <li>Used Pandas to create a multimodal dataset containing 8,000 tweets with emotion keywords and associated images</li>
+                    
+                    <li>Finetuned ViLT model on the Memotion dataset for meme sentiment classification to gain domain knowledge</li>
+                    
+                </ul>
+                <p class="lead">
+                    
+                </p>
+                
+                <a target="_blank" href="https://tianyi-lorena-yan-me.web.app/github.com/Lorenayannnnn/Ememe-2023_Spring-google_explorecsr" class="btn btn-primary"
+                >Github<i class="icon-arrow-right"></i
+                ></a>
+                
+            </div>
+            
+            
+        </div>
+        
+        <div
+                class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+        >
+            
+            <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+                <div class="experience__date">August 2021 – August 2022</div>
+                <h3>Ctrl-F</h3>
+                <p class="lead" style="line-height: 25px;font-size: 15px;margin: -8px 0 8px;">
+                    Role: Cofounder, Leader, Developer
+                </p>
+                <ul style="padding-left: 0;">
+                    
+                    <li>Developed an online platform for USC that allows students and professors to centralize on-campus research and internship opportunities from different departments online</li>
+                    
+                    <li>Incorporated Java multithreading to enable real-time position application status tracking and update</li>
+                    
+                    <li>Utilized Vue.js, Webpack, and Axios for frontend; Java Spring, Maven, and Firebase for backend</li>
+                    
+                    <li>Successfully led the team, orchestrated weekly meetings, and won $1000 USC ABC Innovation First Prize</li>
+                    
+                </ul>
+                <p class="lead">
+                    
+                </p>
+                
+                <a target="_blank" href="https://github.com/2021Unihack-ProfeSearch" class="btn btn-primary"
+                >Github<i class="icon-arrow-right"></i
+                ></a>
+                
+            </div>
+            
+            <div class="col-12 col-md-7 pl-md-0 text-right">
+                
+                <img
+                        class='lozad img-responsive img-clip-left-forward'
+                        src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                        data-src="https://tianyi-lorena-yan-me.web.app/img/works/CtrlF/ctrl-f-overview.png"
+                        data-srcset="https://tianyi-lorena-yan-me.web.app/img/works/CtrlF/ctrl-f-overview.png 1x, https://tianyi-lorena-yan-me.web.app/img/works/CtrlF/ctrl-f-overview.png 2x"
+                        alt="Ctrl-F"
+                />
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</section>
+
+
+	
+	
+<section id="teaching_volunteer" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12" style="max-width: 100%;margin-bottom: 3rem;">
+                <h2>🏫 Teaching and Volunteer</h2>
+                <p class="lead">
+                    
+                </p>
+            </div>
+            <div class="col-12 mt-5 mt-sm-0">
+                
+                <div class="experience">
+                    <div class="experience__date">January 2022 – Present</div>
+                    <div class="experience__title">Teaching Assistant at USC Viterbi School of Engineering</div>
+                    <div class="experience__company" style="line-height: 25px;">Viterbi School of Engineering @ University of Southern California</div>
+                    <div class="experience__company">
+                        <ul style="padding-left: 0;">
+                            
+                            <li>Teaching Assistant for CSCI467 (Intro to Machine Learning) taught by Prof. <a href='https://robinjia.github.io/' target='_blank'>Robin Jia</a></li>
+                            
+                            <li>Teaching Assistant for CSCI270 (Intro to Algorithms and Theory of Computations) for Prof. <a href='https://david-kempe.com/' target='_blank'>David Kempe</a> and Prof. <a href='https://viterbi.usc.edu/directory/faculty/Shamsian/Shahriar' target='_blank'>Shahriar Shamsian</a></li>
+                            
+                            <li>Held office hours and discussion and monitored online forum to answer students’ questions</li>
+                            
+                            <li>Assisted professor in designing and grading homework and exams</li>
+                            
+                            <li>Explained challenging topics in machine learning (transformers, expectation maximization, etc.), and algorithm concepts (DP, NP-hardness reduction, etc.) and guided students to correct answers</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience">
+                    <div class="experience__date">February 2021 – May 2023</div>
+                    <div class="experience__title">Leader of Mentorship Program</div>
+                    <div class="experience__company" style="line-height: 25px;">USC Chinese Students and Scholars Association(CSSA) Career Development</div>
+                    <div class="experience__company">
+                        <ul style="padding-left: 0;">
+                            
+                            <li>Organized resume and interview workshop that mainly helps USC undergraduates to find juniors, seniors, or graduates as tutors for advice</li>
+                            
+                            <li>Led the team and coordinated various resources: planning proposals, propaganda articles, information sessions, mixers, etc.</li>
+                            
+                            <li>Participating in organizing large-scale activities such as 2022 California Chinese Entrepreneurship Conference and Mega Hackathon Web 3 competition</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section class="section section--border-bottom rad-animation-group" id="education">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>📚 Education</h2>
+                <div class="row pt-2 pt-md-4">
+                    
+                    <div class="education" style="margin-left: 1.5rem;">
+                        <div class="education__date">August 2020 – Present (Exp. May 2024)</div>
+                        <div class="education__title">University of Southern California</div>
+                        <div class="education__degree">
+                            - Cumulative GPA: 3.98/4.00
+                        </div>
+                        <div class="education__degree">
+                            - Major: Computer Science B.S.
+                        </div>
+                        <div class="education__degree">
+                            - Course work: : Natural Language Processing, Machine Learning, Probability Theory, Statistics, Calculus, Computing Algorithms, Data Structure, Internetworking
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+
+	
+	
+<section id="contact" class="section section--contact pt-0" style="margin-top: 1rem;">
+    <div class="container">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="mailto:tianyiy@usc.edu" method="">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="full_name"
+                                       placeholder="Full Name"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="email"
+                                       placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="" id="message"
+                                          cols="30" rows="3" placeholder="Type Your Message Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="icon-mail-fill"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info" style="padding: 0 2rem;">
+                    <h4></h4>
+                    <span></span>
+                    <h4>Email</h4>
+                    <span>Work-related: tianyiy `at` usc `dot` edu <br/> Others: lorena `dot` yantianyi1020 'at' gmail 'dot' com</span>
+                    <h4>Location</h4>
+                    <span>Los Angeles, California</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+        
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+
+        </li>
+        
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="https://radity.com/"
+        ><img
+          src="https://tianyi-lorena-yan-me.web.app/"
+          srcset="https://tianyi-lorena-yan-me.web.app/ 1x, https://tianyi-lorena-yan-me.web.app/ 2x"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='https://tianyi-lorena-yan-me.web.app/js/rad-animations.js'></script>
+<script src='https://tianyi-lorena-yan-me.web.app/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://tianyi-lorena-yan-me.web.app/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://tianyi-lorena-yan-me.web.app/js/library/bootstrap.min.js'></script>
+<script src='https://tianyi-lorena-yan-me.web.app/js/sticky-header.js'></script>
+<script src='https://tianyi-lorena-yan-me.web.app/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://tianyi-lorena-yan-me.web.app/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>
